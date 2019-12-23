@@ -1,0 +1,74 @@
+Lilian Chan's Reflection
+
+What decisions or assumptions did you make about how to design your program?
+
+There were many decisions and assumptions when it came to my program. One 
+assumption was that being near another person meant one square to the left, right,
+up, or down because since the player only moved in those directions, being 
+diagonal wouldn’t make as much sense. Another decision I made was to have the 
+skills and appeasing variables and functions within the Maze class itself because 
+it made it easier to access and made the code less clunky. One of the TAs also 
+told me how having the skills within there made it easier to use. I also assumed 
+that once you appease the TAs, you use up one of your skills. Also, another 
+decision I made was to ask for another input when there’s an invalid input 
+instead of explicitly stating an error message. When two objects overlapped, only 
+one of the objects is displayed, so that’s why objects can disappear sometimes. 
+
+What was your test plan for your program?
+
+The plan for my project was to finish the MazeLocation class first and its 
+derived classes, then do the same for MazePerson and its derived classes, then
+the MazeLevel, Maze, and everything else. I did this so that errors didn’t escalate
+as I went through the programming. I also tested every function to make sure I 
+didn’t have compile errors. Afterwards, to test for memory leaks, I went through 
+every scenario of the program that had its own options and/or options, such as 
+restarting the level, restarting the game, winning the game, encountering a TA, 
+etc. By doing that, I was able to catch bugs and fix them. 
+
+How did your testing work out? What bugs did you uncover through testing? 
+How did you fix those bugs?
+
+My testing plan worked out fine and I was able to fix all my bugs. During 
+the initial tests, I found many syntax errors. For example because I put 
+the ‘*’ after, not before the variable when trying to dereference, it 
+caused a lot of problems. I resolved this by consulting Stack Overflow on 
+dereferencing. There were also other syntax errors such as how I incorrectly 
+switched “==” and “=” a few times before catching them. Another big bug I 
+uncovered was when it gave me an error about virtual classes. I didn’t fill 
+override all the functions in my derived classes the first time, so they were 
+still virtual. I looked up the error and was also to fix the problem. There 
+were also a few segmentation/memory errors. The one I remember most clearly 
+was how to forgot to initialize a variable, so it gave me a memory error. I 
+found it with valgrind. Another problem I had a lot of trouble with was 
+resetting the game. This was because I got to the end of the file and tried 
+to read it again. I found the problem area with valgrind and had to consult a 
+peer tutor because I couldn’t see the error at first. They told me to close and 
+open the file again, which word. 
+
+What problems or obstacles did you run into while you were developing your program? 
+How did you resolve these?
+
+When creating the program, organizing everything and making sure everything 
+worked in an orderly manner was hard. For example, sometimes I forgot where the 
+skills counter was located and tried to apply it to a different class. When I 
+changed one thing, I had to make sure the old one was deleted completely. 
+Additionally, I had to keep track of which files did what. I also had to 
+reorganize things a lot of times because sometimes they worked in my head, 
+but not in the program. For example, I thought to have the TAs in the MazeLevel 
+at first, but it made it too clunky because they had to deleted and such each 
+time. Overall, most of my problems came from organization. I worked this out 
+finally by making a flowchart and writing down what each function could do. 
+This was really important because keeping things in my head made for more 
+mistakes. 
+
+What resources were useful to you in solving problems you ran into? Were there helpful 
+websites or Stack Overflow posts? What help did you get from the TAs and/or 
+the Instructor? Were specific parts of the course notes helpful?
+
+I consulted a few resources when working on this project. I asked a TA a 
+few questions when creating my original design, such as how everything can be 
+organized. Looking back on past assignments and notes was also very helpful 
+because it  reminded me how to do many more complicated programming features, 
+such as reading and verifying that a file is correct and making vectors. I also 
+searched up a lot of questions on Stack Overflow, such as reminding myself how 
+to dereference pointers and generate random numbers. 
